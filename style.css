@@ -89,3 +89,35 @@
 .btn-submit {
   margin-top: 20px;
 }
+
+.menu-demo {
+  margin-left: 200px;
+}
+
+.nav-searchbar {
+  margin-left: 210px;
+  margin-right: 220px;
+}
+
+.nav {
+  margin-bottom: 60px;
+}
+
+.nav a:hover {
+  background-color: rgba(255, 88, 73, 0.863);
+}
+
+.nav a {
+  margin-left: 5px;
+  margin-right: 3px;
+}
+
+.form-part {
+  margin-left: 250px;
+  margin-top: 100px;
+}
+
+.contact-label {
+  margin-left: 110px;
+  font-family: "Times New Roman", Times, serif;
+}
