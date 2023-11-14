@@ -1,0 +1,16 @@
+* {
+  display: 100vh;
+  box-sizing: border-box;
+}
+
+.form-outline {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.img-thumbnail {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 30px;
+}
