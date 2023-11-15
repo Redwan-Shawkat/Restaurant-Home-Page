@@ -12,6 +12,10 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
   </head>
   <body>
     <!-- Navbar -->
@@ -29,6 +33,10 @@
       </ul>
       
     </navbar>
+
+    <div class="alert alert-info" role="alert">
+      <h3 class="nav-alert">  Today's Chef's Special: Pasta! Try it out!! </h3>
+    </div>
 
     <!-- Searchbar -->
     <div class="form-outline nav-searchbar">
@@ -57,7 +65,35 @@
           <p  class=" font-weight-bold"> Burger </p>
           <p class=" font-weight-bold"> A Delicious One Patty Burger</p>
           <p class=" font-weight-bold"> Price: 140/= </p>
-          <button type="button" class="btn btn-primary fw-bold "> More Info </button>
+          
+              <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLong">
+              More Info
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Juicy Burger</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="https://images.unsplash.com/photo-1571091655789-405eb7a3a3a8?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="burger" class="img-thumbnail img-fluid">
+                    <p> This is more than a burger; <br> it's an extraordinary culinary experience. </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  END MODAL  -->
+
         </div>
         </span>
         </div>
@@ -272,8 +308,27 @@
         
           </div>
         </div>
-      
+
+        <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class=" my-5">
+
+  <footer class="text-center text-white f-color">
+
+  <div class="text-center text-dark p-3 f-two-color">
+    © 2023 Copyright:
+    <a class="text-dark f-link" href="#!">redsneaKers.com</a>
   </div>
+ 
+</footer>
+  
+</div>
+
+              
+
+                
+  </div>
+
+  
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

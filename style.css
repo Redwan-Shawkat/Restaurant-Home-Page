@@ -1,5 +1,8 @@
 * {
   display: 100vh;
+}
+
+body {
   box-sizing: border-box;
 }
 
@@ -7,13 +10,6 @@
   margin-top: 10px;
   margin-bottom: 50px;
 }
-
-/* .img {
-  object-fit: cover;
-  height: 150px;
-  width: 100%;
-  margin-bottom: 30px;
-} */
 
 .image-one {
   height: 180px;
@@ -99,9 +95,9 @@
   margin-right: 220px;
 }
 
-.nav {
+/* .nav {
   margin-bottom: 60px;
-}
+} */
 
 .nav a:hover {
   background-color: rgba(255, 88, 73, 0.863);
@@ -120,4 +116,62 @@
 .contact-label {
   margin-left: 110px;
   font-family: "Times New Roman", Times, serif;
+}
+
+.f-color {
+  background-color: #f1f1f1;
+}
+
+.f-two-color {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.f-link {
+  text-decoration: none;
+}
+
+.nav-alert {
+  text-align: right;
+
+  /* animation properties */
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from {
+    -moz-transform: translateX(-100%);
+  }
+  to {
+    -moz-transform: translateX(100%);
+  }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from {
+    -webkit-transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(100%);
+  }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  to {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
 }
